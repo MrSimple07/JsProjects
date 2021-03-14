@@ -1,0 +1,38 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    display: grid;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    height: 100vh;
+}
+
+.btn{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+    overflow: hidden;
+    border: none;
+    background-color: #343ba1;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background-color: #6f73c5;
+}
+p{
+    color: #fcfcfc;
+    font-size: 1.5rem;
+}
+a{
+    color: black;
+    font-weight: 700;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quizApp.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quizApp.css">
+</head>
+<body>
+   <div class="app" id="quiz">
+        <div class="container">
+            <div class="app__header">
+                <h1 class="app__title" id="question">Question text</h1>
+
+                <ul class="app__content">
+                    <li> <input type="radio" class="app__answer" id="a" name="answer" ><label for="a" id="a_text">Question</label></li>
+                    <li> <input type="radio" class="app__answer" id="b" name="answer" ><label for="b" id="b_text">Question</label></li>
+                    <li> <input type="radio" class="app__answer" id="c" name="answer"><label for="c"  id="c_text">Question</label></li>
+                
+                </ul>
+            </div>
+         
+            <button class="app__submit" id="submit">Submit</button>
+        </div>
+    </div> 
+    
+    <script src="quizApp.js"></script>
+</body>
+</html>

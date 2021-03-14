@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    border-radius: 100px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all ease-out 3s;
+}
+
+.hover{
+    transform: scale(2);
+}
