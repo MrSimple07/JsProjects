@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #333;
+}
+
+.todo{  
+    color: white;
+    font-family: 'montserrat', sans-serif;
+}
+
+.container{
+    padding: 0 40px;
+}
+
+.todo__content{
+    display: grid;
+    justify-content: center;
+}
+
+.todo__content-title{
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.todo__form{
+    padding: 20px;
+}
+
+.todo__form-input{
+    font-size: 20px;
+    border-radius: 6px;
+    border: none;
+    padding: 5px;
+}
+
+.todo__form-btn{
+    border-radius: 6px;
+    padding: 10px;
+    background: crimson;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all ease 0.3s;
+}
+
+.todo__form-btn:hover{
+    color: crimson;
+    background: white;
+}
+
+.wrapper__list{
+    list-style: none;
+    font-size: 25px;
+}
+
+.wrapper__list-item{
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    transition: all ease 0.3s;
+}
+
+.checkbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+
+.checkbox + label::before{
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    cursor: pointer;
+    
+}
+
+.checkbox:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }
+
+.checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #b3d7ff;
+    
+  }
+  
+
+  .checkbox:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+  }
+
+  .checkbox:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    
+  }
+
+  .checkbox:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+  }
+
+  .checkbox:disabled+label::before {
+    background-color: #e9ecef;
+  }
+
+  label.active{
+    text-decoration: overline;
+  }
